@@ -27,6 +27,6 @@ class Song
   end
   
   def genre_count
-    @@genres.group_by{|value| value}.map{|key, value| [key, value.size] }
+    @@genres.group_by{|value| value}.map{|key, value| [key, value.count] }
   end
 end   
