@@ -27,6 +27,6 @@ class Song
   end
   
   def self.genre_count
-    @@genres
+    @@genres.each{|v| h[v] += 1}
   end
 end   
