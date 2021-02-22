@@ -28,5 +28,6 @@ class Song
   
   def genre_count
     genre_array = {}
-    @@genres.each {|genre| 
+    @@genres.group_by{|value| value}.map{|key, value| [key, value.size] }
+  end
 end   
